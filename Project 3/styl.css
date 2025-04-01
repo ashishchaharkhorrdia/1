@@ -1,0 +1,117 @@
+body{
+    padding-top:0;
+}
+.as1 {
+            position: relative;
+            width: 190%;
+            max-width: 100%;
+            margin: 50px auto;
+            overflow: hidden;
+            border-radius: 10px;
+            padding-top: 0px;
+        }
+.as2 {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+.as3 {
+            min-width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            /* background-color: #fff; */
+            padding: 0px;
+            text-align: center;
+            width:90%;
+        }
+ .as4 img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        
+
+        /* Navigation Arrows */
+        button {
+            position: absolute;
+            top: 50%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            border: none;
+            font-size: 24px;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 10;
+            border-radius: 50%;
+            transform: translateY(-50%);
+        }
+        
+        button:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        
+        .prev {
+            left: 10px;
+        }
+        
+        .next {
+            right: 10px;
+        }
+        
+        
+        
+
+
+/* Responsive Styles using Media Queries */
+
+/* For tablets and below (max width 768px) */
+@media (max-width: 768px) {
+    body{
+        background-image:linear-gradient(to top,yellow,white,yellow);
+    }
+    
+
+
+
+
+
+
+
+
+
+
+}
+
+
+/* For mobile devices (max width 480px) */
+@media (max-width: 480px) {
+    body{
+        background-image:linear-gradient(to top,blue,white,blue);
+    }
+    
+   }
+    
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+
